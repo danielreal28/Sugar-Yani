@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Sugar Yani - Physics Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="screen-map" class="screen">
+        <h1 class="game-title">Sugar <span class="accent">Yani</span></h1>
+        <p class="subtitle">Selecciona un Nivel</p>
+        
+        <div id="levels-grid" class="levels-grid">
+            </div>
+
+        <div class="copyright">© 2026 Developed by DanielReal</div>
+    </div>
+
+    <div id="screen-game" class="screen" style="display: none;">
+        <div class="game-header">
+            <button class="btn-back" onclick="volverAlMapa()">⬅ Mapa</button>
+            <span id="level-title">Nivel 1</span>
+            <button class="btn-reset" onclick="reiniciarNivel()">🔄 Reiniciar</button>
+        </div>
+
+        <div id="target-indicator">Lleva los granos al vaso</div>
+
+        <div class="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
